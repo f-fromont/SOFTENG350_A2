@@ -1,7 +1,140 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+
 .custom-color {
     color: #343E40;
 }
 
 .custom-background-color {
     background-color: #343E40;
+}
+
+
+nav {
+    height: 12rem;
+}
+
+#nav-bar {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: rows;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-logo-name img {
+    margin-right: 1rem;
+}
+
+#nav-logo-name {
+    color: #ffffff;
+    display: flex;
+    flex-direction: rows;
+    font-size: 3rem;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+
+#nav-links a {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-right: 1em;
+}
+
+#nav-links button {
+    font-size: 2rem;
+    padding: 0.8rem 1.4rem;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 32px;
+    transition: all 0.25s;
+}
+
+#nav-links button:hover {
+    background-color: #ffffff;
+    color: #343E40;
+    border-color: #ffffff;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#join {
+    height: 34rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-left: 5rem;
+    
+}
+
+#join-content {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content:flex-start;
+    align-items: flex-start;
+}
+
+#join h1 {
+    font-size: 6rem;
+}
+
+#join h2 {
+    font-size: 2rem;
+    margin: 2rem 4rem;
+}
+
+#join button {
+    margin: 1rem 10rem;
+    background-color: #f5da78;
+    font-size: 3rem;
+    padding: 0.8rem 1.4rem;
+    border: 2px solid #f5da78;
+    border-radius: 32px;
+    transition: all 0.25s;
+}
+
+#join button:hover {
+    color: #f5da78;
+    background-color: #343E40;
+    border-color: #f5da78;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+#join div img {
+    position: absolute;
+    right: 0px;
 }
