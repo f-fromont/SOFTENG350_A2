@@ -20,7 +20,6 @@ time, mark, audio, video {
 }
 
 body {
-    background-color: #fff;
     font-family: "Roboto Condensed","Roboto", sans-serif;
 }
 
@@ -68,7 +67,8 @@ nav {
     margin-right: 1em;
 }
 
-#nav-links button {
+#sign-in {
+    margin-left: 0.4rem;
     font-size: 2rem;
     padding: 0.8rem 1.4rem;
     color: #ffffff;
@@ -77,10 +77,27 @@ nav {
     transition: all 0.25s;
 }
 
-#nav-links button:hover {
+#sign-in:hover {
     background-color: #ffffff;
     color: #343E40;
     border-color: #ffffff;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#register {
+    background-color: #f5da78;
+    font-size: 2rem;
+    padding: 0.8rem 1.4rem;
+    border: 2px solid #f5da78;
+    border-radius: 32px;
+    transition: all 0.25s;
+}
+
+#register:hover {
+    color: #f5da78;
+    background-color: #343E40;
+    border-color: #f5da78;
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -141,6 +158,7 @@ nav {
 
 #latest-books {
     padding: 8rem 5rem 0rem 5rem;
+    background-color: #ffffff;
 }
 
 #latest-books h1{
@@ -179,16 +197,13 @@ nav {
 #book-stand {
     position: relative;
     top: -100px;
-    height: 140px;
+    height: 160px;
     background-color: #e9ab62;
     border-radius: 60px;
     z-index: 1;
 }
 
 #news-socials {
-    height: 60rem;
-    position: relative;
-    top: -180px;
     z-index: 0;
 
     display: flex;
@@ -196,11 +211,6 @@ nav {
     align-content: center;
     align-items: baseline;
     justify-content: space-between;
-}
-
-#news {
-    position: relative;
-    top: 100px;
 }
 
 #news h1{
@@ -237,8 +247,6 @@ nav {
 }
 
 #socials {
-    position: relative;
-    top: 100px;
     margin-right: 6rem;
 }
 
@@ -246,18 +254,152 @@ nav {
     font-size: 4rem;
     color: #ffffff;
     margin-bottom: 4rem;
-    text-align: right;
+    text-align:center;
 }
 
 #socials img{
     margin-left: 3rem;
-    width: 128px;
-    height: 128px;
+    width: 100px;
+    height: 100px;
     transition: all 0.25s;
+    border-radius: 20px;
 }
 
 #socials img:hover{
     transform: scale(1.1);
 }
 
+footer {
+    margin: 3rem 0rem 1rem 0rem;
+    color: #9ea5a7;
+    text-align: center;
+    font-size: 1.3rem;
+}
 
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#modal-content {
+    margin:  5% auto;
+    padding: 20px;
+    border: 1px solid #343E40;
+    border-radius: 30px;
+    background-color: #ffffff;
+    width: 60%;
+}
+
+#modal-content h1{
+    font-size: 2rem;
+}
+
+#close {
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 2px solid #343E40;
+    border-radius: 10px;
+    padding: 0.4rem 0.4rem;
+    transition: all 0.25s;
+}
+
+#close:hover,
+#close:focus {
+    background-color: #343E40;
+    color: #ffffff;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#cancel {
+    font-size: 2rem;
+    transition: all 0.25s;
+    background-color: #ffffff;
+    border: 2px solid #343E40;
+    border-radius: 10px;
+}
+
+#cancel:hover {
+    background-color: #f5da78;
+    border-color: #f5da78;
+    color: #343E40;
+    cursor: pointer;
+}
+
+#submit {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    padding: 0.1rem 0.3rem;
+    transition: all 0.25s;
+    color: #ffffff;
+    border: 2px solid #343E40;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-color: #f5da78;
+    color: #343E40;
+    border-color: #fdfdfd;
+    cursor: pointer;
+}
+
+#bookclubrego {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-left: 2rem;
+}
+
+#userDetails {
+    margin: 2rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+#addresses {
+    margin: 2rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+#contacts {
+    margin: 2rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+input {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 0.2em 0.2em;
+}
+
+#book-img {
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    width: 650px;
+    height: 600px;
+
+}
