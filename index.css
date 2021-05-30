@@ -290,8 +290,8 @@ footer {
 }
 
 #modal-content {
-    margin:  5% auto;
-    padding: 20px;
+    margin:  1rem auto;
+    padding: 10px;
     border: 1px solid #343E40;
     border-radius: 30px;
     background-color: #ffffff;
@@ -299,7 +299,7 @@ footer {
 }
 
 #modal-content h1{
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 0 auto;
 }
 
@@ -340,7 +340,6 @@ footer {
 #submit {
     margin-left: 3rem;
     margin-right: 1rem;
-    margin-top: 1rem;
     font-size: 2rem;
     padding: 0.1rem 0.3rem;
     transition: all 0.25s;
