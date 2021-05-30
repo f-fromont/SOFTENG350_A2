@@ -21,7 +21,7 @@ time, mark, audio, video {
 
 body {
     background-color: #fff;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Condensed","Roboto", sans-serif;
 }
 
 
@@ -190,4 +190,29 @@ nav {
     position: relative;
     top: -180px;
     z-index: 0;
+}
+
+#news h1{
+    position: relative;
+    top: 100px;
+    margin-left: 4rem;
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+#news-list {
+    position: relative;
+    top: 100px;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+#news-list li {
+    background-color: #f5da78;
+    border: 2px solid #f5da78;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0.8rem 4rem 0.4rem 4rem;
+    padding: 0.8rem 1.2rem;
 }
