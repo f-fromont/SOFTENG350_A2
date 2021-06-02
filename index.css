@@ -54,7 +54,7 @@ nav {
     color: #ffffff;
     display: flex;
     flex-direction: rows;
-    font-size: 2.0rem;
+    font-size: 3rem;
     justify-content: space-between;
     align-content: center;
     align-items: center;
@@ -63,14 +63,14 @@ nav {
 
 #nav-links a {
     color: #ffffff;
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-right: 1em;
 }
 
 #sign-in {
     margin-left: 0.4rem;
-    font-size: 1.4rem;
-    padding: 0.8rem 1rem;
+    font-size: 2rem;
+    padding: 0.8rem 1.4rem;
     color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 32px;
@@ -87,8 +87,8 @@ nav {
 
 #register {
     background-color: #f5da78;
-    font-size: 1.6rem;
-    padding: 0.8rem 1rem;
+    font-size: 2rem;
+    padding: 0.8rem 1.4rem;
     border: 2px solid #f5da78;
     border-radius: 32px;
     transition: all 0.25s;
@@ -102,7 +102,6 @@ nav {
     cursor: pointer;
 }
 
-
 #join {
     height: 29rem;
     color: #ffffff;
@@ -111,7 +110,7 @@ nav {
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    padding-left: 3rem;
+    padding-left: 5rem;
     
 }
 
@@ -125,16 +124,16 @@ nav {
 }
 
 #join h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #join h2 {
-    font-size: 1.2rem;
-    margin: 2rem 2rem;
+    font-size: 1.5rem;
+    margin: 2rem 4rem;
 }
 
 #join button {
-    margin: 1rem 4rem;
+    margin: 1rem 10rem;
     background-color: #f5da78;
     font-size: 2rem;
     padding: 0.8rem 1.4rem;
@@ -155,16 +154,15 @@ nav {
 #join div img {
     position: absolute;
     right: 0px;
-
 }
 
 #latest-books {
-    padding: 8rem 5rem 0rem 3rem;
+    padding: 8rem 5rem 0rem 5rem;
     background-color: #ffffff;
 }
 
 #latest-books h1{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #latest-books h2{
@@ -173,8 +171,7 @@ nav {
 }
 
 #books {
-    min-height: 300px;
-    max-height: 500px;
+    height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -185,12 +182,10 @@ nav {
 }
 
 #latest-books img {
-    margin: 0rem 1rem;
+    flex: 1rem 1rem 400px;
     border-radius: 5px;
-    min-width: 150px;
-    min-height: 225px;
-    max-width: 300px;
-    max-height: 450px;
+    width: 300px;
+    height: 450px;
     transition: all 0.25s;
     z-index: 2;
 }
@@ -208,10 +203,19 @@ nav {
     z-index: 1;
 }
 
+#news-socials {
+    z-index: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: baseline;
+    justify-content: space-between;
+}
 
 #news h1{
-    margin-left: 3rem;
-    font-size: 3rem;
+    margin-left: 4rem;
+    font-size: 4rem;
     color: #ffffff;
 }
 
@@ -242,25 +246,19 @@ nav {
     content:"• ";
 }
 
+#socials {
+    margin-right: 6rem;
+}
 
 #socials h1{
-    font-size: 3rem;
+    font-size: 4rem;
     color: #ffffff;
-    margin-top: 2rem;
     margin-bottom: 4rem;
     text-align:center;
 }
 
-#icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: space-around;
-    justify-content: center;
-}
-
 #socials img{
-    margin: 0 1rem;
+    margin-left: 3rem;
     width: 100px;
     height: 100px;
     transition: all 0.25s;
@@ -290,27 +288,26 @@ footer {
 }
 
 #modal-content {
-    margin:  1rem auto;
-    padding: 10px;
+    margin:  5% auto;
+    padding: 20px;
     border: 1px solid #343E40;
     border-radius: 30px;
     background-color: #ffffff;
-    width: 50%;
+    width: 60%;
 }
 
 #modal-content h1{
-    font-size: 1rem;
-    padding: 0 auto;
+    font-size: 2rem;
 }
 
 #close {
     float: right;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
     background-color: #ffffff;
     border: 2px solid #343E40;
-    border-radius: 20px;
-    padding: 0.6rem 0.8rem;
+    border-radius: 10px;
+    padding: 0.4rem 0.4rem;
     transition: all 0.25s;
 }
 
@@ -338,7 +335,7 @@ footer {
 }
 
 #submit {
-    margin-left: 3rem;
+    margin-left: 1rem;
     margin-right: 1rem;
     font-size: 2rem;
     padding: 0.1rem 0.3rem;
@@ -359,10 +356,10 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
-    align-content: center;
-
+    justify-content:flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-left: 2rem;
 }
 
 #userDetails {
@@ -398,3 +395,11 @@ input {
     padding: 0.2em 0.2em;
 }
 
+#book-img {
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    width: 650px;
+    height: 600px;
+
+}
