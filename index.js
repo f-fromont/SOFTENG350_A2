@@ -1,13 +1,15 @@
 let modal = document.getElementById("modal");
 
-let btn = document.getElementsByClassName("open-form")
+let btn = document.getElementById("trigger-modal");
+
+let btn2 = document.getElementById("trigger-modal-2");
 
 let close = document.getElementById("close");
 
-btn[0].onclick = function () {
+btn.onclick = function () {
     modal.style.display = "block";
 }
-btn[1].onclick = function () {
+btn2.onclick = function () {
     modal.style.display = "block";
 }
 
